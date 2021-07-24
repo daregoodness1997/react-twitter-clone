@@ -21,18 +21,18 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
         <div className='postHeader'>
           <div className='postHeaderText'>
             <h3>
-              Dare Goodness{' '}
+              {displayName}
               <span className='postHeaderSpecial'>
-                <VerifiedUser className='postBadge' /> @daregoodness
+                {verified && <VerifiedUser className='postBadge' />} @{username}
               </span>
             </h3>
           </div>
           {/* start post header description */}
           <div className='postHeaderDescription'>
-            <p>Building a Twitter Clone in react can be quite fun tho!</p>
+            <p>{text}</p>
           </div>
           {/* /end post header description */}
-          <img src={PostImage} alt='' />
+          <img src={image} alt='' />
           <div className='postFooter'>
             <ChatBubbleOutline fontSize='small' />
             <Repeat fontSize='small' />
