@@ -1,8 +1,9 @@
 import { Avatar, Button } from '@material-ui/core';
-import React from 'react';
+import React, { useState } from 'react';
 import './TweetBox.css';
 
 const TweetBox = () => {
+  const [tweetMessage, setTweetMessage] = useState('');
   return (
     <div className='tweetBox'>
       <form>

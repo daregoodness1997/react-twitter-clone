@@ -14,7 +14,7 @@ const Post = ({ displayName, username, verified, text, image, avatar }) => {
   return (
     <div className='post'>
       <div className='postAvatar'>
-        <Avatar src='' />
+        <Avatar src={avatar} />
       </div>
       <div className='postBody'>
         {/* start post header */}

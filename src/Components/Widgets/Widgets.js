@@ -28,6 +28,7 @@ const Widgets = () => {
         />
 
         <TwitterShareButton
+          className='tweetBoxTweetButton'
           url={'https://facebook.com/daregoodness'}
           options={{ text: '#reactjs is awesome', via: '_DareGoodness' }}
         />
