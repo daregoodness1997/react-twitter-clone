@@ -6,7 +6,6 @@ import {
   Repeat,
   VerifiedUser,
 } from '@material-ui/icons';
-import PostImage from '../../Images/postGif.jpg';
 import React from 'react';
 import './Post.css';
 

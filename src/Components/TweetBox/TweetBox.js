@@ -15,7 +15,12 @@ const TweetBox = () => {
       verified: true,
       text: tweetMessage,
       image: tweetImage,
+      avatar:
+        'https://www.nj.com/resizer/h8MrN0-Nw5dB5FOmMVGMmfVKFJo=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg',
     });
+
+    setTweetImage('');
+    setTweetMessage('');
   };
   return (
     <div className='tweetBox'>
@@ -37,7 +42,9 @@ const TweetBox = () => {
           className='tweetBoxImageInput'
         />
 
-        <Button className='tweetBoxTweetButton'>Tweet</Button>
+        <Button className='tweetBoxTweetButton' onClick={sendTweet}>
+          Tweet
+        </Button>
       </form>
     </div>
   );
